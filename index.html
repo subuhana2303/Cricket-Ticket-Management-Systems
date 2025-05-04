@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏏 Cricket Ticket Booking</h1>
+      <p>Book your seats now for your favorite match!</p>
+    </header>
+
+    <main>
+      <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Your name">
+
+        <label for="match">Select Match:</label>
+        <select id="match" required>
+          <option value="">-- Choose a match --</option>
+          <option value="INDvsAUS">India vs Australia</option>
+          <option value="ENGvsPAK">England vs Pakistan</option>
+          <option value="NZvsSA">New Zealand vs South Africa</option>
+        </select>
+
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" required min="1" max="10" value="1">
+
+        <button type="submit">Book Ticket</button>
+      </form>
+
+      <div id="confirmation"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cricket Ticket Booking System</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
