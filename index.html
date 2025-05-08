@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cricket Ticket Booking</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🏏 Cricket Ticket Booking</h1>
-      <p>Book your seats now for your favorite match!</p>
+      <h1><i class="fa-solid fa-ticket"></i> Cricket Ticket Booking</h1>
+      <p>Experience the stadium thrill – Book now!</p>
     </header>
 
     <main>
-      <form id="bookingForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required placeholder="Your name">
+      <form id="bookingForm" novalidate>
+        <div class="form-group">
+          <label for="name"><i class="fa-solid fa-user"></i> Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="e.g., Rohit Sharma" required />
+        </div>
 
-        <label for="match">Select Match:</label>
-        <select id="match" required>
-          <option value="">-- Choose a match --</option>
-          <option value="INDvsAUS">India vs Australia</option>
-          <option value="ENGvsPAK">England vs Pakistan</option>
-          <option value="NZvsSA">New Zealand vs South Africa</option>
-        </select>
+        <div class="form-group">
+          <label for="match"><i class="fa-solid fa-baseball-bat-ball"></i> Select Match:</label>
+          <select id="match" name="match" required>
+            <option value="">-- Choose a match --</option>
+            <option value="India vs Australia">India vs Australia</option>
+            <option value="England vs Pakistan">England vs Pakistan</option>
+            <option value="New Zealand vs South Africa">New Zealand vs South Africa</option>
+          </select>
+        </div>
 
-        <label for="seats">Number of Seats:</label>
-        <input type="number" id="seats" required min="1" max="10" value="1">
+        <div class="form-group">
+          <label for="seats"><i class="fa-solid fa-chair"></i> Number of Seats:</label>
+          <input type="number" id="seats" name="seats" min="1" max="10" value="1" required />
+        </div>
 
-        <button type="submit">Book Ticket</button>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Book Now</button>
       </form>
 
-      <div id="confirmation"></div>
+      <div id="confirmation" aria-live="polite"></div>
     </main>
 
     <footer>
-      <p>&copy; 2025 Cricket Ticket Booking System</p>
+      <p>&copy; 2025 Cricket Booking. Made with ❤️ by Subuhana</p>
     </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
