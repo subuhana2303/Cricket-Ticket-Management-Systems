@@ -18,7 +18,11 @@ This is a front-end demo of a Cricket Ticket Booking System built using HTML, CS
 
 ## 📷 Preview
 
-![Project Screenshot](https://github.com/yourusername/yourrepository/blob/main/images/screenshot.png)
+### Output 1
+![Output1](output1.png)
+## Output 2
+![Output2](output2.png)
+
 
 ---
 
